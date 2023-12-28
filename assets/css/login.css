@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Roboto-Light;
+  src: url(/assets/font/Roboto-Light.ttf);
+}
+
+html {
+  font-family: Roboto-Light;
+}
+
+body {
+  background-image: url(/assets/img/banner.png);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 30%;
+  height: 70%;
+  backdrop-filter: blur(15px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px, 0px 0px 10px;
+}
+
+.container h1 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.container .input-form {
+  margin-top: 55px;
+}
+
+.container .input-form input {
+  width: 300px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #ddd;
+  color: #ccc;
+}
+
+.container .input-form input:focus {
+  outline: none;
+}
+
+.container .input-form input::placeholder {
+  color: #fff;
+}
+
+.container .signup-link {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: -230px;
+}
+
+.container .signup-link:hover {
+  opacity: 0.5;
+}
+
+.container .btn {
+  margin-top: 50px;
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: cyan;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  transition: 0.15s ease;
+  position: relative;
+}
+
+.btn:hover {
+  background: transparent;
+  color: cyan;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  transition: 0.35s ease 0.15s;
+  background-color: cyan;
+}
+
+.btn::after {
+  bottom: 0;
+  right: 0;
+}
+
+.btn::before {
+  top: 0;
+  left: 0;
+}
+
+.btn:hover::after,
+.btn:hover::before {
+  width: 100%;
+}

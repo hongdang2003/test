@@ -1,0 +1,268 @@
+@font-face {
+  font-family: Roboto-Light;
+  src: url(/assets/font/Roboto-Light.ttf);
+}
+
+html {
+  font-family: Roboto-Light;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.heading {
+  width: 100%;
+  height: 150px;
+  background-color: #016bbd;
+}
+
+.heading img {
+  width: 300px;
+  margin: 20px 0 0 20px;
+}
+
+.heading form {
+  float: right;
+  line-height: 140px;
+}
+
+.heading form input {
+  width: 328px;
+  height: 36px;
+  font-size: 15px;
+  border: 2px solid #f46f20;
+}
+
+.heading form button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #f46f20;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.heading form button:hover {
+  opacity: 0.7;
+}
+
+.banner {
+  position: relative;
+  margin-top: 10px;
+}
+
+.banner img {
+  width: 100%;
+  height: 80vh;
+  background-position: cover;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 99.5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
+.banner::after {
+  content: "GÓC SINH VIÊN";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav {
+  background-color: #f46f20;
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.nav .nav-content {
+  display: flex;
+  line-height: 80px;
+  margin-left: 205px;
+}
+
+.nav .nav-content li,
+.nav .nav-content a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav .nav-content .thispage {
+  opacity: 0.7;
+  border-top: 5px solid #000;
+  color: #fff;
+}
+
+.nav .nav-content .thispage:hover {
+  border: none;
+  opacity: 1;
+}
+
+.nav .nav-content a {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 60px;
+}
+
+.nav .nav-content a:hover {
+  opacity: 0.7;
+  border-top: 5px solid #000;
+}
+
+.content {
+  margin-top: 50px;
+  margin-left: 168px;
+  overflow: hidden;
+}
+
+.content .content1 img {
+  width: 340px;
+  height: 200px;
+}
+
+.content .content1 img:hover {
+  opacity: 0.8;
+}
+
+.content .content1 h3 {
+  margin-top: 8px;
+}
+
+.content .content1 p {
+  color: #888;
+  margin-top: 15px;
+}
+
+.content .content1 h3:hover {
+  color: #f05123;
+  cursor: pointer;
+}
+
+.content .content1 {
+  float: left;
+  width: 27%;
+  margin-right: 45px;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-top: 30px;
+  width: 77.5%;
+  margin-left: 164px;
+  border-color: #f05123;
+}
+
+.copy {
+  margin-left: 164px;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footersub {
+  width: 100%;
+  height: 10px;
+  background-color: #f46f20;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  background-color: #192041;
+}
+
+.footer .col1 {
+  margin-left: -15px;
+  width: 33.33333%;
+  text-align: center;
+  padding-top: 52px;
+}
+
+.footer .col1 img {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 114px;
+}
+
+.footer .col1 i {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 20px;
+  margin-left: 4px;
+}
+
+.footer .col1 i:hover {
+  cursor: pointer;
+}
+
+.footer .col1 h3 {
+  color: #f46f20;
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.footer .col1 p {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.footer .col2 {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.content-footer .title {
+  margin-top: 62px;
+}
+
+.content-footer .title h2 {
+  color: #f46f20;
+  font-weight: 900;
+}
+
+.content-footer a {
+  margin-top: 30px;
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.content-footer p {
+  line-height: 1.5;
+  color: #fff;
+  font-size: 15px;
+}
+
+.content-footer p i {
+  color: #f46f20;
+}
+
+.footer .col3 {
+  width: 30%;
+  margin-top: 92px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: Roboto-Light;
+  src: url(/assets/font/Roboto-Light.ttf);
+}
+
+html {
+  font-family: Roboto-Light;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+  position: relative;
+}
+
+.col {
+  width: 45%;
+  float: left;
+}
+
+.heading {
+  width: 100%;
+  height: 150px;
+  background-color: #016bbd;
+}
+
+.heading img {
+  width: 300px;
+  margin: 20px 0 0 20px;
+}
+
+.heading form {
+  float: right;
+  line-height: 140px;
+}
+
+.heading form input {
+  width: 328px;
+  height: 36px;
+  font-size: 15px;
+  border: 2px solid #f46f20;
+}
+
+.heading form button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #f46f20;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.heading form button:hover {
+  opacity: 0.7;
+}
+
+#imageContainer {
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#imageContainer #myImage {
+  width: 100%;
+  height: 583px;
+  transition: opacity 1s ease-in-out;
+}
+
+.nav {
+  background-color: #f46f20;
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.nav .nav-content {
+  display: flex;
+  line-height: 80px;
+  margin-left: 205px;
+}
+
+.nav .nav-content li,
+.nav .nav-content a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav .nav-content .thispage {
+  opacity: 0.5;
+  border-top: 5px solid #000;
+  color: #fff;
+}
+
+.nav .nav-content .thispage:hover {
+  border: none;
+  opacity: 1;
+}
+
+.nav .nav-content a {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 60px;
+}
+
+.nav .nav-content a:hover {
+  opacity: 0.7;
+  border-top: 5px solid #000;
+}
+
+.title-content {
+  margin-top: 20px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content .content-left,
+.content .content-right {
+  border: 2px solid #ccc;
+}
+
+.content .content-left {
+  margin-right: 145px;
+}
+
+.content-sub p {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.content-sub hr {
+  margin-top: 20px;
+}
+
+.content h2:hover,
+.content p:hover {
+  color: #f46f20;
+  cursor: pointer;
+}
+
+.content img:hover {
+  box-shadow: 0px 0px 5px rgb(7, 77, 7), 0px 0px 10px rgb(4, 166, 4),
+    0px 0px 20px rgb(9, 190, 9), 0px 0px 40px rgb(1, 194, 1),
+    0px 0px 50px rgb(165, 255, 165);
+}
+
+.center {
+  top: -80px;
+  position: relative;
+  display: inline;
+  left: 40px;
+  line-height: 1.4;
+}
+
+.contain {
+  display: inline;
+  position: relative;
+  top: -40px;
+  left: 40px;
+}
+
+.content-padding {
+  margin: 30px;
+}
+
+.content-padding h2,
+.content-padding a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.content-sub img {
+  width: 275px;
+  margin-top: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 90px;
+  background: #016bbd;
+  position: absolute;
+  bottom: -970px;
+  text-align: center;
+  line-height: 90px;
+}
+
+.footer h1 {
+  color: #fff;
+}
+
+.btn {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  padding: 10px 20px 12px 32px;
+  font-size: 24px;
+  border-radius: 0 0 0 45px;
+  background-color: #f46f20;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn i {
+  display: none;
+}
+
+.btn:hover p {
+  display: none;
+}
+
+.btn:hover i {
+  display: block;
+  padding: 1.8px 45px;
+}

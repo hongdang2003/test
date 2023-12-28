@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/img/icon1.png" />
+    <link rel="stylesheet" href="assets/fonts/themify-icons.css">
+  </head>
+  <body>
+    <div class="heading">
+      <form action="">
+        <input type="text" required />
+        <button type="submit">Tìm kiếm</button>
+      </form>
+      <img src="assets/img/logo-trang.png" alt="Logo" />
+      
+    </div>
+    <div id="imageContainer">
+      <img id="myImage" src="assets/img/banner.png" alt="Image">
+    </div>
+  
+    <a href="login.html"><button class="btn"><p>Đăng Xuất</p>
+       <i class="ti-shift-right"></i>
+       </button></a>
+    <div class="nav">
+      <ul class="nav-content">
+        <a href="#">
+          <li class="thispage">Trang chủ</li>
+        </a>
+        <a href="admissions.html">
+          <li>Tuyển sinh</li>
+        </a>
+        <a href="educationprogram.html">
+          <li>Chương trình đào tạo</li>
+        </a>
+        <a href="studentcorner.html">
+          <li>Góc sinh viên</li>
+        </a>
+        <a href="recruitment.html">
+          <li>Tuyển dụng</li>
+        </a>
+      </ul>
+    </div>
+    <h1 class="title-content">TIN MỚI NHẤT</h1>
+    <div class="content">
+      <div class="content-left col">
+        <div class="content-padding">
+          <img src="assets/img/row1.jpg.png" alt="" width="600px" />
+          <a href="event.html"><h2>Sự kiện văn hóa nghệ thuật Hoa Nhân</h2></a>
+          <hr />
+          <div class="content-sub">
+            <img src="assets/img/row2.jpg.png" alt="" />
+            <div class="contain">
+              <a href="event12.html"><p>
+              DJ Wukong - Hotboy<br />
+              Người Ấy là Ai "xác"<br />
+              nhận sẽ tham gia<br />
+              !Happy Bee 12
+            </p></a></div>
+            <hr />
+            <img src="assets/img/row3.jpg.png" alt="" />
+            <div class="center">
+            <a href="eventms.html"><p>
+              Chuỗi nhạc hội Happy<br />
+              Bee đến với cộng đồng<br />
+              sinh viên
+            </p></a></div>
+          </div>
+          </div>
+        </div>
+        <div class="content-right col">
+          <div class="content-padding">
+            <img src="assets/img/row1.jpg.png" alt="" width="600px" />
+            <a href="event.html"><h2>Sự kiện văn hóa nghệ thuật Hoa Nhân</h2></a>
+            <hr />
+            <div class="content-sub">
+              <img src="assets/img/row2.jpg.png" alt="" />
+              <div class="contain">
+              <a href="event12.html"><p>
+                DJ Wukong - Hotboy<br />
+                Người Ấy là Ai "xác"<br />
+                nhận sẽ tham gia<br />
+                !Happy Bee 12
+              </p></a></div>
+              <hr />
+              <img src="assets/img/row3.jpg.png" alt="" />
+              <div class="center">
+                <a href="eventms.html"><p>
+                Chuỗi nhạc hội Happy<br />
+                Bee đến với cộng đồng<br />
+                sinh viên
+              </p></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <h1>Nguyễn Hồng Đăng</h1>
+    </div>
+    <script>
+      var images = ['assets/img/banner.png', 'assets/img/banner1.jpg', 'assets/img/banner2.jpg'];
+      var currentIndex = 0;
+
+function changeImage() {
+  var imageElement = document.getElementById('myImage');
+  currentIndex = (currentIndex + 1) % images.length;
+  var imagePath = images[currentIndex];
+
+  // Tăng độ trong suốt của ảnh (opacity) để tạo hiệu ứng mượt mà
+  imageElement.style.opacity = 0;
+
+  setTimeout(function() {
+    imageElement.src = imagePath;
+    imageElement.style.opacity = 1;
+  }, 500); // Thời gian delay giữa chuyển đổi ảnh (1 giây)
+}
+
+// Change image every 3 seconds (3000 milliseconds)
+setInterval(changeImage, 5000); // Thời gian thay đổi ảnh (4 giây)
+
+    </script>
+  </body>
+</html>
